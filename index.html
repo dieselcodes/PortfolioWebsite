@@ -87,24 +87,32 @@
         <h3>Resume</h3>
         <p>You can view my resume below. For best results download the PDF.</p>
     <!-- Replace the <object> or <embed> with this iframe to preview the resume inline -->
-<div class="resume-wrap">
-  <iframe
-    src="./assets/resume.pdf"
-    width="100%"
-    height="900"
-    style="border: none;"
-    title="Resume - Daniel Henriquez"
-    aria-label="Resume - Daniel Henriquez">
-  </iframe>
+<section id="resume" class="resume">
+  <div class="container">
+    <h3>Resume</h3>
+    <p>You can view my resume below. For best results, use the download link.</p>
 
-  <!-- Fallback link if the preview fails -->
-  <p>If the preview doesn't load, <a href="./assets/resume.pdf" target="_blank" rel="noopener">open or download the PDF</a>.</p>
-</div>
-</div>
-        <p><a class="btn" href="assets/resume" download>Download Resume (PDF)</a></p>
+    <div class="resume-wrap" style="text-align:center; margin-top:1rem;">
+      <!-- Inline PDF preview in an iframe. Update src below if you host under a subpath. -->
+      <iframe
+        src="./assets/resume.pdf"
+        title="Resume - Daniel Henriquez"
+        aria-label="Resume - Daniel Henriquez"
+        loading="lazy"
+        style="border:none; width:100%; max-width:900px; height:900px;">
+      </iframe>
+
+      <!-- Centered download button -->
+      <div class="resume-download" style="margin-top:0.75rem;">
+        <a class="btn" href="./assets/resume.pdf" download rel="noopener" style="display:inline-block; padding:0.6rem 1rem; text-decoration:none;">Download Resume (PDF)</a>
       </div>
-    </section>
 
+      <noscript>
+        <p>If the inline preview does not display, <a href="./assets/resume.pdf" target="_blank" rel="noopener">open or download the PDF</a>.</p>
+      </noscript>
+    </div>
+  </div>
+</section>
     <section id="contact" class="contact">
       <div class="container">
         <h3>Contact</h3>
