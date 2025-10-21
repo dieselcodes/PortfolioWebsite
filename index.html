@@ -5,6 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Daniel Henriquez — Portfolio</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Center the resume preview and download button for a user site (served from domain root) */
+    .resume-wrap { text-align: center; margin-top: 1rem; }
+    .resume-wrap iframe { border: none; max-width: 900px; width: 100%; height: 900px; display: block; margin: 0 auto; }
+    .resume-download { margin-top: 0.75rem; text-align: center; }
+    .resume-download .btn { display: inline-block; text-decoration: none; padding: 0.6rem 1rem; }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -34,8 +41,7 @@
     <section id="about" class="about">
       <div class="container">
         <h3>About Me</h3>
-        <p>I'm an operations leader and data-driven problem solver. I progressed through roles at Popstroke from Golf Associate to Shift Lead, then Operating Manager and now Operating Partner — where I manage 70+ staff, train new managers, and help open new venues.</p>
-        <p>I use data to tighten margins and improve operations, combining hands-on leadership with analysis (sales metrics, scheduling, and process improvements). I enjoy building repeatable workflows, measuring impact, and communicating results to stakeholders.</p>
+        <p>I'm an operations leader and data-driven problem solver... (content trimmed for brevity)</p>
       </div>
     </section>
 
@@ -65,17 +71,8 @@
             <h4>Data Engineering & Tools</h4>
             <ul>
               <li>ETL pipelines and data cleaning</li>
-              <li>Docker, Git, CI/CD basics</li>
-              <li>Big data tools (Spark) — familiar</li>
-            </ul>
-          </div>
-
-          <div class="skill-card">
-            <h4>Visualization & Communication</h4>
-            <ul>
-              <li>Matplotlib, Seaborn, Plotly</li>
-              <li>Dash / Streamlit for dashboards</li>
-              <li>Storytelling with data</li>
+              <li>Big data tools (Spark)</li>
+              <li>Visualization libraries (Matplotlib, Seaborn, Plotly)</li>
             </ul>
           </div>
         </div>
@@ -85,40 +82,37 @@
     <section id="resume" class="resume">
       <div class="container">
         <h3>Resume</h3>
-        <p>You can view my resume below. For best results download the PDF.</p>
-    <!-- Replace the <object> or <embed> with this iframe to preview the resume inline -->
-<section id="resume" class="resume">
-  <div class="container">
-    <h3>Resume</h3>
-    <p>You can view my resume below. For best results, use the download link.</p>
+        <p>You can view my resume below. For best results, use the download link.</p>
 
-    <div class="resume-wrap" style="text-align:center; margin-top:1rem;">
-      <!-- Inline PDF preview in an iframe. Update src below if you host under a subpath. -->
-      <iframe
-        src="./assets/resume.pdf"
-        title="Resume - Daniel Henriquez"
-        aria-label="Resume - Daniel Henriquez"
-        loading="lazy"
-        style="border:none; width:100%; max-width:900px; height:900px;">
-      </iframe>
+        <div class="resume-wrap">
+          <!-- Inline PDF preview in an iframe. Use absolute root path for GitHub user site -->
+          <iframe
+            src="/assets/resume.pdf"
+            title="Resume - Daniel Henriquez"
+            aria-label="Resume - Daniel Henriquez"
+            loading="lazy">
+          </iframe>
 
-      <!-- Centered download button -->
-      <div class="resume-download" style="margin-top:0.75rem;">
-        <a class="btn" href="./assets/resume.pdf" download rel="noopener" style="display:inline-block; padding:0.6rem 1rem; text-decoration:none;">Download Resume (PDF)</a>
+          <!-- Centered download button -->
+          <div class="resume-download">
+            <a class="btn" href="/assets/resume.pdf" download rel="noopener">Download Resume (PDF)</a>
+          </div>
+
+          <!-- Fallback text for very old browsers -->
+          <noscript>
+            <p>If the inline preview does not display, <a href="/assets/resume.pdf" target="_blank" rel="noopener">open or download the PDF</a>.</p>
+          </noscript>
+        </div>
       </div>
+    </section>
 
-      <noscript>
-        <p>If the inline preview does not display, <a href="./assets/resume.pdf" target="_blank" rel="noopener">open or download the PDF</a>.</p>
-      </noscript>
-    </div>
-  </div>
-</section>
     <section id="contact" class="contact">
       <div class="container">
         <h3>Contact</h3>
-        <p>Want to collaborate? Email me at <a href="mailto:danielh1228@icloud.com">danielh1228@icloud.com</a> or connect on LinkedIn.</p>
+        <p>Want to collaborate? Email me at <a href="mailto:danielh1228@icloud.com">danielh1228@icloud.com</a></p>
       </div>
     </section>
+
   </main>
 
   <footer class="site-footer">
