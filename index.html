@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daniel Henriquez — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">My Portfolio</h1>
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <h2>Welcome!</h2>
+        <p class="lead">Hi, I'm <strong>Daniel Henriquez</strong>. I'm a data enthusiast who loves turning data into insights.</p>
+        <a class="btn" href="#about">Learn more about me</a>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h3>About Me</h3>
+        <p>I'm an operations leader and data-driven problem solver. I progressed through roles at Popstroke from Golf Associate to Shift Lead, then Operating Manager and now Operating Partner — where I manage 70+ staff, train new managers, and help open new venues.</p>
+        <p>I use data to tighten margins and improve operations, combining hands-on leadership with analysis (sales metrics, scheduling, and process improvements). I enjoy building repeatable workflows, measuring impact, and communicating results to stakeholders.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <div class="container">
+        <h3>Skills</h3>
+        <div class="skill-grid">
+          <div class="skill-card">
+            <h4>Programming</h4>
+            <ul>
+              <li>Python (pandas, numpy, scikit-learn)</li>
+              <li>R (tidyverse, caret)</li>
+              <li>SQL (Postgres, MySQL)</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h4>Machine Learning</h4>
+            <ul>
+              <li>Supervised learning (regression, classification)</li>
+              <li>Unsupervised learning (clustering, dimensionality reduction)</li>
+              <li>Model evaluation & feature engineering</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h4>Data Engineering & Tools</h4>
+            <ul>
+              <li>ETL pipelines and data cleaning</li>
+              <li>Docker, Git, CI/CD basics</li>
+              <li>Big data tools (Spark) — familiar</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h4>Visualization & Communication</h4>
+            <ul>
+              <li>Matplotlib, Seaborn, Plotly</li>
+              <li>Dash / Streamlit for dashboards</li>
+              <li>Storytelling with data</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="resume">
+      <div class="container">
+        <h3>Resume</h3>
+        <p>You can view my resume below. For best results download the PDF.</p>
+        <div class="resume-wrap">
+          <iframe src="assets/resume.pdf" frameborder="0" class="resume-embed" title="Resume - Daniel Henriquez">Your browser doesn't support embedding PDFs. <a href="assets/resume.pdf" download>Download the resume (PDF)</a>.</iframe>
+        </div>
+        <p class="muted">If you don't see the embedded PDF, place your resume PDF at <code>assets/resume.pdf</code> (filename must match) and refresh the page.</p>
+        <p><a class="btn" href="assets/resume.pdf" download>Download Resume (PDF)</a></p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h3>Contact</h3>
+        <p>Want to collaborate? Email me at <a href="mailto:danielh1228@icloud.com">danielh1228@icloud.com</a> or connect on LinkedIn.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Daniel Henriquez. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
